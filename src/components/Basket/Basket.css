@@ -1,0 +1,29 @@
+.Basket {
+  right: 20px;
+  width: 500px;
+  background-color: #fff;
+  top: 70px;
+  padding: 20px;
+}
+.basketImg {
+  width: 100px;
+  padding: 10px;
+}
+.Basket .increment {
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: start;
+}
+.space-between {
+  justify-content: space-between;
+}
+.Checkout {
+  width: 100%;
+  padding: 10px;
+}

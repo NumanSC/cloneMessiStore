@@ -1,0 +1,48 @@
+.background {
+  position: relative;
+  overflow: hidden;
+  height: 75vh;
+}
+.backgroundImage {
+  background-image: url("background.webp");
+
+  background-size: cover;
+  background-position: right;
+}
+.column-2 img {
+  width: auto;
+}
+.messibackground {
+  height: 75vh;
+}
+
+.flex-columns .row {
+  display: flex;
+  justify-content: space-around;
+}
+.column-1 {
+  display: flex;
+}
+.column-1 h1 {
+  display: flex;
+  align-items: center;
+}
+
+.prev,
+.later {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+.later {
+  right: 9%;
+}
+.column-1 > h1,
+div > h5 {
+  color: #fff;
+  text-align: center;
+}
+
+.playVideo {
+  display: none;
+}

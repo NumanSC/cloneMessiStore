@@ -1,0 +1,73 @@
+.liveLife {
+  background-image: url("bg2.webp");
+  background-size: 40vh;
+  background-position: bottom;
+}
+.liveLife {
+  background-size: cover;
+  background-position: bottom bottom;
+  margin: 8rem;
+}
+.contain {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.logolife {
+  display: flex;
+  justify-content: center;
+}
+
+.headerLife {
+  text-align: center;
+  color: black !important;
+  font-weight: 400;
+  margin: 0;
+  font-size: 2.5rem !important;
+  letter-spacing: 0.1rem;
+}
+
+.yazi p {
+  display: none;
+}
+span {
+  font-weight: 700;
+}
+.pLife {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+.column:first-child {
+  grid-gap: 0 0 3rem 6rem;
+}
+.row,
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+
+.yazi h5 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.yazi {
+  font-weight: 400;
+  font-size: 1rem !important;
+}
+
+@media (max-width: 800px) {
+  .liveLife::before {
+    background-size: 100%;
+  }
+  .column {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,48 @@
+.dropdown {
+  display: grid;
+
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.3rem;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 0 2rem 2rem 2rem;
+}
+.dropdown div ul li h5 {
+  font-weight: bold;
+  color: #0d6e9f;
+  margin: 0;
+  font-size: 0.8rem;
+}
+.dropdown div ul li h5:hover {
+  text-decoration: underline;
+}
+.dropdown ul li {
+  padding: 0.1rem;
+}
+.dropdown ul li a {
+  color: var(--colorLink);
+}
+.dropdown ul li a:hover {
+  color: #0d6e9f;
+  text-decoration: underline;
+}
+
+.dropdown-2 {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+.dropdown-2 ul {
+  margin: auto;
+  padding: 0 2rem 0 2rem;
+}
+.dropdown-2 ul li {
+  padding: 0.1rem;
+}
+.dropdown-2 ul li a {
+  color: var(--colorLink);
+}
+.dropdown-2 ul li a:hover {
+  text-decoration: underline;
+  color: #0d6e9f;
+}

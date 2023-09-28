@@ -1,0 +1,44 @@
+.walletContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  background-color: #e8eff9;
+}
+.walletContainer button {
+  width: 10rem;
+}
+.item .buttons {
+  text-align: center;
+}
+.item {
+  display: grid;
+  padding: auto;
+  justify-items: end;
+}
+.item2 {
+  margin: auto 0;
+  padding: auto;
+}
+.wallet1 {
+  color: #fff;
+
+  background-image: url("//www.themessistore.com/cdn/shop/files/bg1.png?v=1656745915");
+  width: 90%;
+  padding: 100px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 800px) {
+  .walletContainer {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .item {
+    display: block;
+  }
+  .wallet1 {
+    margin: auto;
+  }
+}

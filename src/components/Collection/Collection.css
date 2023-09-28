@@ -1,0 +1,52 @@
+.collection {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+.containerCollaction {
+  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.containerCollaction h2 {
+  font-size: 2.5rem;
+}
+.containerCollaction h2 strong {
+  font-weight: 400;
+}
+.col {
+  padding: 1rem;
+}
+p.money {
+  color: #1089c7;
+}
+
+.arkaPlan {
+  border-radius: 0.6rem;
+  padding: 4rem;
+  background-color: #fff;
+}
+
+.arkaPlan img {
+  height: 100%;
+  width: 100%;
+}
+.arkaPlan img:hover {
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  width: 100%;
+  margin: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .collection {
+    display: block;
+  }
+}

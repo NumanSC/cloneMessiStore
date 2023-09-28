@@ -1,0 +1,38 @@
+.details {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.details {
+  display: flex;
+}
+.divImg {
+  top: -30%;
+  z-index: -1;
+  object-position: center;
+}
+.headerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-attachment: fixed;
+}
+/* .width {
+  height: 50vh;
+  width: 100%;
+} */
+.imgHeader a {
+  color: #ffff;
+  text-decoration: none;
+}
+.imgHeader a:hover {
+  color: var(--colorBtnPrimary);
+}
+.imgHeader {
+  margin: 3rem;
+
+  color: #ffff;
+}
+.imgHeader h1 {
+  margin: 0;
+  font-size: 3rem;
+}

@@ -1,0 +1,76 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.products .numan {
+  object-fit: scale-down;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.products img {
+  width: 100%;
+  padding: 4rem;
+  margin-bottom: 2.3rem;
+}
+.products img:hover {
+  scale: 1.5;
+  transition: all 0.3s ease-out;
+}
+.colorPalet {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 1.5rem 0 0.4rem;
+  margin-top: -2rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.uruntitle {
+  padding: 1rem;
+}
+.urunPrice {
+  color: var(--bs-blue);
+  font-size: 1.1rem;
+}
+
+.productListButton {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.clip-path {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clip-path .path {
+  display: inline-block;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+@media only screen and (max-width: 800px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  Sidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  Sidebar {
+    display: none;
+  }
+  .products .flex-center button {
+    width: 100%;
+  }
+}

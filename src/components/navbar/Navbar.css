@@ -1,0 +1,161 @@
+nav {
+  background-color: var(--colorNav);
+  padding: 0rem 2.5rem;
+
+  width: 100%;
+
+  position: sticky !important;
+  top: 0;
+  z-index: 9999;
+}
+nav.between {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-img {
+  z-index: 99;
+}
+Link {
+  z-index: 999;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.navbar-item {
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.navbar-left .navbar-item {
+  flex-wrap: wrap;
+}
+.LinkDrop {
+  z-index: 999;
+}
+.navbar-items {
+  padding: 1rem 1.4rem;
+  align-items: center;
+}
+.navbar-items a {
+  padding-bottom: 0.5rem;
+}
+.navbar-items:hover .LinkDrop {
+  color: #1089c7;
+  z-index: 999;
+  border-bottom: 2px solid #1089c7;
+}
+.linkA:hover {
+  color: #1089c7;
+  border-bottom: 2px solid #1089c7;
+}
+li a {
+  text-decoration: none;
+}
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menubar {
+  display: none;
+  position: absolute;
+  width: 100%;
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  left: 0;
+  padding-top: 3rem;
+  top: 4rem;
+  z-index: 5;
+  background-color: var(--colorNav);
+}
+.menubar2 {
+  width: 100vh;
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+  top: 3rem;
+  background-color: var(--colorNav);
+}
+.dropdown {
+  font-size: 0.7rem;
+}
+.dropdown ul {
+  pad: 0.6rem;
+}
+.navbar-right ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: var(--colorNavText);
+}
+.toolbar__content {
+  background-color: var(--colorFooterText);
+  color: #fff;
+  padding: 5px 0;
+}
+.toolbar__content p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.totalProduct {
+  padding: 2px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  color: #fff !important;
+  top: 25%;
+  left: 50%;
+}
+.searchForm {
+  justify-content: space-between;
+}
+.search-left {
+  display: flex;
+  align-items: center;
+  flex: start;
+}
+.search-right {
+  display: flex;
+  flex: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.searchInput {
+  width: 100vh;
+  height: 100%;
+  border: none;
+}
+
+.searchButton {
+  border: 0;
+  background-color: #fff;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+  border: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.basketWindow {
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+@media (max-width: 100px) {
+  .navbar-item {
+    display: none;
+    height: 100%;
+  }
+}

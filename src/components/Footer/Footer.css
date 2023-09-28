@@ -1,0 +1,120 @@
+.footer {
+  background-image: url("footer-bg.webp");
+  background-size: cover;
+  background-position: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.mainfooter {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.footerlogo {
+  padding: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.footerHeader span {
+  margin: 0;
+  font-size: 2rem;
+}
+.footerHeader {
+  margin-top: 2rem;
+  color: #fff;
+}
+.footerHeader p {
+  margin: 0;
+}
+
+.footer span {
+  display: flex;
+  justify-content: center;
+}
+.footer form {
+  display: flex;
+  justify-content: center;
+}
+.footer form input {
+  width: 35%;
+  padding: 0.7em;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  color: var(--colorTextBody);
+}
+.footer form button {
+  border-radius: 0.5rem;
+  width: 7.3rem;
+  margin-left: 0.2rem;
+  padding: 1rem;
+}
+.footer .footerAbout {
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  justify-content: center;
+}
+.footer .footerAbout .customer {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.footer .footerAbout .abouts {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.footer .footerAbout ul {
+  padding: 0;
+}
+.footer .footerAbout li {
+  padding: 0.2rem;
+}
+.footerAbout strong,
+.abouts strong {
+  color: var(--colorTextBody);
+}
+
+.footerAbout li,
+.abouts li {
+  color: #ffff;
+  font-weight: 400;
+}
+.footerAbout li:hover,
+.abouts li:hover {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.footerrow {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5rem;
+}
+.retuns li {
+  padding-right: 2rem;
+}
+
+.footerrow ul {
+  display: flex;
+  margin: 2rem;
+}
+.appslogo li {
+  padding: 0.3rem;
+}
+.footerrow ul {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .footerAbout {
+    display: block;
+  }
+  .footerAbout li {
+    display: none;
+  }
+}
