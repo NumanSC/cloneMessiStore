@@ -25,7 +25,7 @@ function Collection() {
               <p className="text-center money">$180</p>
             </div>
             <div className="buttons flex">
-              <button onClick={navigateDetails} className="btn btn-primary">
+              <button onClick={navigateDetails} className="btn btn-primary scroolTop">
                 DETAİLS
               </button>
               <button className="btn btn-secondary">BUY NOW</button>

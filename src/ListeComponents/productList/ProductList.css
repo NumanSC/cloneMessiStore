@@ -7,6 +7,7 @@
   margin-right: 2rem;
 }
 .products .numan {
+  overflow: hidden;
   object-fit: scale-down;
   background-color: #fff;
   border-radius: 15px;
@@ -55,7 +56,7 @@
   display: inline-block;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -63,13 +64,11 @@
     display: none;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 800px) {
   .products {
     grid-template-columns: repeat(1, 1fr);
   }
-  Sidebar {
-    display: none;
-  }
+
   .products .flex-center button {
     width: 100%;
   }

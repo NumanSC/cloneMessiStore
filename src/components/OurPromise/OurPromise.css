@@ -42,7 +42,7 @@
 .OP .down .flex button {
   width: 10rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1280px) {
   .OP {
     display: block;
     height: 100%;

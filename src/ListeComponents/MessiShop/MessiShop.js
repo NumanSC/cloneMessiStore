@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
+// import urunler from "../../hooks/useData";
 import ProductList from "../productList/ProductList";
 import SideBar from "../sidebar/SideBar";
 import "./MessiShop.css";
-import useFetch from "../../hooks/useFetch";
-function MessiShop() {
+// import useFetch from "../../hooks/useFetch";
+
+function MessiShop({ urunler }) {
+  // const urunler = db.db;
+
   const [filters, setFilters] = useState(true);
   const [sidefilter, setSideFilter] = useState("");
-  const { data: urunler } = useFetch("http://localhost:3000/urunler" + sidefilter);
-  console.log(sidefilter);
-  useEffect(() => {
-    console.log(urunler);
-  }, [urunler]);
-  useEffect(() => {
-    console.log(sidefilter);
-  }, [sidefilter]);
+  // const { data: urunler } = useFetch("http://localhost:3000/urunler" + sidefilter);
+  // console.log(sidefilter);
+  // useEffect(() => {
+  //   console.log(urunler);
+  // }, [urunler]);
+  // useEffect(() => {
+  //   console.log(sidefilter);
+  // }, [sidefilter]);
+
   // useEffect(() => {
   //   let sidebar = document.getElementsByClassName("products")[0];
   //   let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
@@ -34,13 +39,18 @@ function MessiShop() {
   //     }
   //   };
   // }, []);className="pagePadding"
+  // const urun = () => {};
+  useEffect(() => {
+    document.querySelector("html").scroll({
+      top: 0,
+    });
+    console.log("details yüklendi", document.querySelector(".Details"));
+    console.log(urunler);
+  }, [urunler]);
   return (
     <section className="messiShop">
-      <div className="pos-relative h50vh w-100">
-        <div className="pos-abs top-30- index-1-">
-          <img src="img/0M8A7214_1800x.webp" alt="" className="headerImg" />
-        </div>
-        <div className="pos-abs top-50 imgHeader">
+      <div className="pos-relative backgoundShopAll">
+        <div className="pos-abs imgHeader">
           <a href="https://www.themessistore.com/">Home</a>
           <h1>Shop All</h1>
         </div>

@@ -3,7 +3,7 @@ nav {
   padding: 0rem 2.5rem;
 
   width: 100%;
-
+  max-height: 25rem;
   position: sticky !important;
   top: 0;
   z-index: 9999;
@@ -50,6 +50,7 @@ ul {
   z-index: 999;
   border-bottom: 2px solid #1089c7;
 }
+
 .linkA:hover {
   color: #1089c7;
   border-bottom: 2px solid #1089c7;
@@ -70,17 +71,22 @@ li a {
   -webkit-animation-delay: 3.5s;
   -o-animation-delay: 3.5s;
   animation-delay: 3.5s;
+
   left: 0;
   padding-top: 3rem;
   top: 4rem;
   z-index: 5;
   background-color: var(--colorNav);
 }
+.menubar:hover {
+  transition: all 1s ease-in-out;
+}
 .menubar2 {
-  width: 100vh;
   display: none;
   position: absolute;
   width: 100%;
+
+  word-break: break-all;
   padding-top: 2rem;
   top: 3rem;
   background-color: var(--colorNav);
@@ -128,9 +134,9 @@ a {
   display: flex;
   flex: end;
   align-items: center;
-  flex-wrap: wrap;
 }
 .searchInput {
+  font-size: 1.1rem;
   width: 100vh;
   height: 100%;
   border: none;
@@ -150,10 +156,10 @@ input:focus {
 }
 .basketWindow {
   display: flex;
-  flex-wrap: wrap;
   display: none;
+  transition: display 1s ease-in-out;
 }
-@media (max-width: 100px) {
+@media (max-width: 900px) {
   .navbar-item {
     display: none;
     height: 100%;

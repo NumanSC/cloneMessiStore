@@ -2,17 +2,20 @@
   padding-bottom: 2rem;
   position: sticky;
   margin-left: 1rem;
+  letter-spacing: 0.1rem;
   height: 100%;
+  width: 16rem;
   bottom: 10rem;
   margin-bottom: 5rem;
 }
 .sidebar li {
   font-size: 1rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 .sidebar span {
   font-size: medium;
 }
+
 #filtreleme {
   flex-wrap: wrap;
 }
@@ -23,19 +26,23 @@
 
 .content-wrapper {
   width: 100%;
-  padding-right: 4rem;
-  height: 90vh;
+
+  height: 85vh;
   width: 100%;
   position: sticky;
   top: 7rem;
   bottom: 5rem;
-  font-size: 15px;
+  font-size: 1rem;
   left: 0;
   overflow-y: scroll;
 }
 
 .content-wrapper .disp {
   display: none;
+}
+
+.content-wrapper div {
+  padding-bottom: 2rem;
 }
 
 .filter {
@@ -47,9 +54,6 @@
 .flex {
   display: flex;
 }
-.content-wrapper .flex {
-  flex-wrap: wrap;
-}
 
 .sidebarDrop {
   font-weight: 400;
@@ -57,4 +61,10 @@
 
 .sidebarDrop:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
 }

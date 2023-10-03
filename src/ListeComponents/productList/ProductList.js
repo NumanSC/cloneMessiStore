@@ -4,6 +4,7 @@ import "./ProductList.css";
 import { ProductContext } from "../../context/ProductContext";
 import { useNavigate } from "react-router";
 function ProductList({ urunler }) {
+  console.log(urunler);
   const [resim, setResim] = useState();
   const { addProduct } = useContext(ProductContext);
   // useEffect(() => {

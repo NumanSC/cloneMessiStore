@@ -1,13 +1,15 @@
 import "./Details.css";
-import useFetch from "../hooks/useFetch";
+// import useFetch from "../hooks/useFetch";
 import { useParams } from "react-router";
+import urunler from "../hooks/useData";
+import { useEffect } from "react";
 
 function Details({ addProduct }) {
   const { id } = useParams();
 
   console.log(id);
-  const url = "http://localhost:3000/urunler/" + id;
-  const { data: urun } = useFetch(url);
+  // const url = "http://localhost:3000/urunler/" + id;
+  const urun = urunler[id - 1];
   console.log();
   const dispMenu = (e) => {
     console.log(e.target.nextElementSibling);
@@ -25,6 +27,12 @@ function Details({ addProduct }) {
     console.log("ss");
     console.log(urun.img[0]);
   };
+  useEffect(() => {
+    document.querySelector("html").scroll({
+      top: 0,
+    });
+    console.log("details yüklendi", document.querySelector(".Details"));
+  }, []);
   return (
     <div className="Details ">
       {urun && (

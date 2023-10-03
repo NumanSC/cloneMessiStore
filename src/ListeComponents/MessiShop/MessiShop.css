@@ -1,3 +1,15 @@
+.messiShop .backgoundShopAll {
+  background-image: url("../../../public/img/0M8A7214_1800x.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+}
+.imgHeader {
+  bottom: 3rem;
+}
+
 .details {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -6,7 +18,8 @@
   display: flex;
 }
 .divImg {
-  top: -30%;
+  top: 0;
+
   z-index: -1;
   object-position: center;
 }
@@ -35,4 +48,14 @@
 .imgHeader h1 {
   margin: 0;
   font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  .imgHeader a,
+  .imgHeader h1 {
+    display: block;
+    color: black;
+  }
+  .messiShop .backgoundShopAll {
+    background-image: none;
+  }
 }

@@ -1,24 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./Search.css";
-
+import urunler from "../../hooks/useData";
 import { useSearchParams } from "react-router-dom";
-import useFetch from "../../hooks/useFetch";
-import ProductList from "./../../ListeComponents/productList/ProductList";
-import Sidebar from "../../ListeComponents/sidebar/SideBar";
+// import useFetch from "../../hooks/useFetch";
+
+import MessiShop from "./../../ListeComponents/MessiShop/MessiShop";
 
 function Search() {
   const [SearchParams] = useSearchParams();
-  const [filters, setFilters] = useState(true);
-  const [sidefilter, setSideFilter] = useState("");
-  const quary = SearchParams.get("q");
 
-  const url = "http://localhost:3000/urunler?q=" + quary;
-  console.log(url);
-  const { data: urunler } = useFetch(url);
+  const quary = SearchParams.get("q");
+  console.log(quary);
+  useEffect(() => {
+    document.querySelector("html").scroll({
+      top: 0,
+    });
+  }, []);
+  const search = () => {
+    return urunler.filter(
+      (item) => item.title.toLocaleLowerCase().indexOf(`${quary}`) !== -1 || item.color.toLocaleLowerCase().indexOf(`${quary}`) !== -1 || item.price.toLocaleLowerCase().indexOf(`${quary}`) !== -1
+    );
+  };
+  const call = search()[0];
+  console.log(search()[0]);
+
   return (
     <div className="flex SearchProduct">
-      <Sidebar filters={filters} setFilters={setFilters} setSideFilter={setSideFilter} urunler={urunler} sidefilter={sidefilter} />
-      <ProductList urunler={urunler} setSideFilter={setSideFilter} sidefilter={sidefilter} />
+      {call && <MessiShop urunler={search()} />}
+      {!call && <h2>product not found</h2>}
     </div>
   );
 }

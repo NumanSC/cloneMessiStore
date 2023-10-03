@@ -40,6 +40,8 @@ function Navbar() {
   // };
   const onSearch = () => {
     setClickSearch(!clickSearch);
+    clickSearch === false && document.getElementsByClassName("searchInput").focus();
+    console.log(document.getElementsByClassName("searchInput"));
   };
 
   const handleSubmit = (e) => {
@@ -120,11 +122,11 @@ function Navbar() {
               </li>
               <li className="navbar-items">
                 <a href="https://www.themessistore.com/account/login?return_url=%2Faccount">
-                  <FontAwesomeIcon icon={faUser} size="xl" />
+                  <FontAwesomeIcon icon={faUser} size="xl" className="fontawsome" />
                 </a>
               </li>
               <li className="pos-relative navbar-items" onClick={changeBasket}>
-                <FontAwesomeIcon icon={faBagShopping} size="xl" />
+                <FontAwesomeIcon icon={faBagShopping} size="xl" className="fontawsome" />
                 {localStorage.getItem("1") && <p className="pos-abs totalProduct ">{localStorage.getItem("1")}</p>}
               </li>
             </ul>
@@ -142,7 +144,7 @@ function Navbar() {
         <nav className="navbar around">
           <form action="submit" onSubmit={handleSubmit} className="searchForm flex">
             <ul className="search-left">
-              <input className="searchInput" type="search" placeholder="Searh..." onChange={(e) => setKeyword(e.target.value)} />
+              <input className="searchInput" type="search" placeholder="Searh..." autoFocus={true} onChange={(e) => setKeyword(e.target.value)} />
             </ul>
             <ul className="search-right ">
               <li className="navbar-items">

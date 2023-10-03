@@ -33,8 +33,7 @@
   letter-spacing: 2px;
 }
 .dropdown-2 ul {
-  margin: auto;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .dropdown-2 ul li {
   padding: 0.1rem;

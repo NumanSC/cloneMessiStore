@@ -1,6 +1,11 @@
-.SearchProduct {
+/* .SearchProduct {
   margin-top: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
+} */
+
+.SearchProduct h2 {
+  padding: 20rem;
+  margin: auto;
 }

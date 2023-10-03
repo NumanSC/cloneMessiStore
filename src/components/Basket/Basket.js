@@ -17,7 +17,7 @@ function Basket() {
     } */}
       {top &&
         top.map((urun) => (
-          <div className="flex" key={urun.id}>
+          <div className="flex flex-evenly " key={urun.id}>
             <ul>
               <li>
                 <img src={`/productimg/${urun.img}`} alt="Gösterilemeyen Ürün" className="basketImg" />
@@ -26,7 +26,7 @@ function Basket() {
             <ul>
               <li>{urun.title}</li>
               <li>
-                <div className="flex space-between">
+                <div className="flex space-between ">
                   <div>
                     <button className="increment">-</button>
                     {urun.adet}{" "}
@@ -35,7 +35,7 @@ function Basket() {
                     </button>
                   </div>
 
-                  <div>${urun.price}</div>
+                  <div className="flex-end">${urun.price}</div>
                 </div>
               </li>
             </ul>

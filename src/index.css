@@ -248,8 +248,11 @@ a,
   background-color: #fff;
   color: #000000;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .flex {
     display: block;
+  }
+  body {
+    font-size: 10px;
   }
 }

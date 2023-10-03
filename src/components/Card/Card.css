@@ -39,8 +39,10 @@
   justify-self: start;
 }
 .grid-card {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
+
+  border-radius: 2rem;
 }
 .grid-card p {
   display: none;
@@ -55,17 +57,15 @@
 .grid-card img {
   width: 100%;
   height: 100%;
-  height: auto;
+
   padding: 0rem;
-  border-radius: 1rem;
 }
-.grid-card img {
-  overflow: hidden;
-}
-.grid-card img:hover {
+/* .grid-card img {
+} */
+.grid-card:hover img {
   scale: 1.2;
-  transition: all 1s ease-in-out;
-  transition-duration: 1s;
+  transition: all 0.5s ease-in-out;
+  transition-duration: 0.5s;
 }
 @media (max-width: 800px) {
   .card {

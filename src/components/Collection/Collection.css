@@ -45,7 +45,7 @@ p.money {
   margin: 0.6rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .collection {
     display: block;
   }

@@ -1,13 +1,19 @@
 .Basket {
-  right: 20px;
-  width: 500px;
+  right: 1.5rem;
+  width: 33rem;
+  max-height: 30rem;
   background-color: #fff;
-  top: 70px;
+  top: 5.2rem;
   padding: 20px;
+  overflow: auto;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
 }
 .basketImg {
-  width: 100px;
-  padding: 10px;
+  width: 9rem;
+  padding: 0.7rem;
 }
 .Basket .increment {
   padding: 10px;
@@ -26,4 +32,17 @@
 .Checkout {
   width: 100%;
   padding: 10px;
+}
+/* @media (max-width: 1200px) {
+  .Basket {
+  }
+} */
+
+@media (max-width: 800px) {
+  .Basket {
+    right: 0;
+    top: 3.4rem;
+    left: 0;
+    width: 100%;
+  }
 }
